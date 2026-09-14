@@ -1,0 +1,16 @@
+{
+  "log_version": "1.0",
+  "entries": [
+    {
+      "sequence": 1,
+      "action": "FILE_INGESTED",
+      "filename": "cdr_records.csv",
+      "sha256": "0cab99950fdbc6b02b425bf7a1c8662fdb48c7f8ec2a49550274230dac3f1665",
+      "size_bytes": 7833,
+      "officer_id": "IO-TEST-001",
+      "case_id": "CASE-104",
+      "timestamp_utc": "2026-09-14T12:07:27Z",
+      "prev_entry_hash": null
+    }
+  ]
+}

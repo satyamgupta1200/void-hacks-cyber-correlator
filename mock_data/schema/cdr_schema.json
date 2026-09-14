@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CDR Schema",
+  "type": "object",
+  "properties": {
+    "msisdn": { "type": "string" },
+    "called_number": { "type": "string" },
+    "call_start": { "type": "string" },
+    "call_end": { "type": "string" },
+    "duration_sec": { "type": "integer" },
+    "imei": { "type": "string" },
+    "imsi": { "type": "string" },
+    "cell_id": { "type": "string" },
+    "lac": { "type": "string" },
+    "call_type": { "type": "string" },
+    "roaming_flag": { "type": "string" },
+    "serving_operator": { "type": "string" }
+  },
+  "required": ["msisdn", "called_number", "call_start", "call_end", "duration_sec", "imei"]
+}

@@ -1,0 +1,28 @@
+From: "HDFC Bank" <alerts@hdfcbank-kyc.in>
+To: suresh.k@gmail.com
+Subject: [URGENT] Your HDFC Bank Account Will Be Suspended – Verify KYC Immediately
+Date: Thu, 14 Mar 2024 23:11:44 +0530
+Message-ID: <20240314231144.920184@hdfcbank-kyc.in>
+Reply-To: support@hdfcbank-kyc.in
+X-Originating-IP: 196.216.2.45
+Received: from mail.hdfcbank-kyc.in (196.216.2.45)
+    by mx.google.com with ESMTPS id z182si9201824pga.12.2024.03.14.10.41.44;
+    Thu, 14 Mar 2024 23:11:44 +0530
+Authentication-Results: mx.google.com;
+    dkim=fail header.i=@hdfcbank-kyc.in;
+    spf=fail (google.com: domain of alerts@hdfcbank-kyc.in does not designate 196.216.2.45 as permitted sender) smtp.mailfrom=alerts@hdfcbank-kyc.in;
+    dmarc=fail (p=REJECT dis=NONE) header.from=hdfcbank-kyc.in
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2>HDFC Bank KYC Update Required</h2>
+<p>Dear Customer,</p>
+<p>Your bank account safety mandates immediate KYC updating. Failure to update within 24 hours will result in temporary suspension of your account.</p>
+<p>Please click the secure link below to update your mobile banking application:</p>
+<p><a href="http://hdfcbank-kyc-update.xyz/verify?token=abc123">http://hdfcbank-kyc-update.xyz/verify?token=abc123</a></p>
+<p>Thank you,<br>HDFC Security Team</p>
+</body>
+</html>

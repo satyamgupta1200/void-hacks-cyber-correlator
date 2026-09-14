@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Bank Statement Schema",
+  "type": "object",
+  "properties": {
+    "txn_id": { "type": "string" },
+    "txn_timestamp": { "type": "string" },
+    "debit_account": { "type": "string" },
+    "credit_account": { "type": "string" },
+    "upi_handle_sender": { "type": "string" },
+    "upi_handle_receiver": { "type": "string" },
+    "amount_inr": { "type": "number" },
+    "txn_type": { "type": "string" },
+    "bank_ref": { "type": "string" },
+    "narration": { "type": "string" },
+    "balance_after": { "type": "number" }
+  },
+  "required": ["txn_id", "txn_timestamp", "debit_account", "credit_account", "amount_inr"]
+}

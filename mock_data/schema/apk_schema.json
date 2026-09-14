@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "APK Dump Schema",
+  "type": "object",
+  "properties": {
+    "device_info": { "type": "object" },
+    "installed_apps": { "type": "array" },
+    "sms_log": { "type": "array" },
+    "call_log": { "type": "array" },
+    "network_log": { "type": "array" }
+  },
+  "required": ["device_info", "installed_apps", "sms_log", "network_log"]
+}

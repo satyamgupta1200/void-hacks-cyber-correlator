@@ -1,0 +1,58 @@
+{
+  "device_info": {
+    "imei": "356938035643809",
+    "android_id": "a1b2c3d4e5f60718",
+    "model": "Samsung Galaxy M32",
+    "os_version": "Android 12",
+    "capture_timestamp": "2024-03-15T16:00:00+05:30"
+  },
+  "installed_apps": [
+    {
+      "package_name": "com.hdfc.mobilebanking",
+      "app_label": "HDFC Bank MobileBanking",
+      "install_source": "com.android.vending",
+      "install_ts": "2023-08-10T10:00:00+05:30",
+      "permissions": [
+        "INTERNET",
+        "USE_FINGERPRINT"
+      ]
+    },
+    {
+      "package_name": "com.hdfcbank.customerapp.update",
+      "app_label": "HDFC Bank Update",
+      "install_source": "apkpure.com",
+      "install_ts": "2024-03-15T11:15:00+05:30",
+      "permissions": [
+        "READ_SMS",
+        "BIND_ACCESSIBILITY_SERVICE",
+        "RECORD_AUDIO",
+        "SYSTEM_ALERT_WINDOW",
+        "INTERNET",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    }
+  ],
+  "sms_log": [
+    {
+      "from": "VM-HDFCBK",
+      "to": "9845012345",
+      "body": "Your OTP for UPI transaction is 847291. Valid for 10 mins. Do not share.",
+      "ts": "2024-03-15T14:32:55+05:30"
+    },
+    {
+      "from": "VM-HDFCBK",
+      "to": "9845012345",
+      "body": "INR 95,000 debited from A/c XX9201 on 15-Mar-24. Available Bal: INR 2,341.50",
+      "ts": "2024-03-15T14:33:09+05:30"
+    }
+  ],
+  "call_log": [],
+  "network_log": [
+    {
+      "ssid": "JioFiber-Home-Suresh",
+      "bssid": "a4:c3:f0:85:ac:11",
+      "connected_ts": "2024-03-15T08:00:00+05:30",
+      "ip_assigned": "192.168.1.105"
+    }
+  ]
+}

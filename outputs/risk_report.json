@@ -1,0 +1,79 @@
+{
+  "case_id": "CASE-104",
+  "total_risk_score": 100,
+  "threshold_label": "CRITICAL",
+  "triggered_rules_count": 6,
+  "triggered_rules": [
+    {
+      "rule_id": "R-001",
+      "title": "SIM Swap Prior to Fraud Transaction",
+      "triggered": true,
+      "score": 35,
+      "evidence": "SIM Swap detected on MSISDN +919845012345 at 2024-03-15T14:11:00 (22.0 min before fraud). IMEI changed from 356938035643809 to 490154203237518.",
+      "statutory_ref": "IT Act \u00a766C",
+      "entities_involved": [
+        "PHONE:+919845012345",
+        "IMEI:490154203237518"
+      ]
+    },
+    {
+      "rule_id": "R-002",
+      "title": "High-Velocity Multi-Hop Fund Laundering",
+      "triggered": true,
+      "score": 40,
+      "evidence": "INR 95,000.00 transferred across 4 hops in 5.70 minutes from victim.suresh@okaxis to atm.withdrawal@sbi.",
+      "statutory_ref": "PMLA \u00a73",
+      "entities_involved": [
+        "UPI_HANDLE:victim.suresh@okaxis",
+        "UPI_HANDLE:fastpay99@okhdfcbank",
+        "UPI_HANDLE:cashout.agent@oksbi",
+        "UPI_HANDLE:atm.withdrawal@sbi"
+      ]
+    },
+    {
+      "rule_id": "R-003",
+      "title": "Recently Registered UPI Mule Account",
+      "triggered": true,
+      "score": 25,
+      "evidence": "Mule UPI handle 'fastpay99@okhdfcbank' registered within 48 hours prior to transaction.",
+      "statutory_ref": "RBI Circular 2023/147",
+      "entities_involved": [
+        "UPI_HANDLE:fastpay99@okhdfcbank"
+      ]
+    },
+    {
+      "rule_id": "R-004",
+      "title": "Sideloaded APK with Dangerous Permissions",
+      "triggered": true,
+      "score": 30,
+      "evidence": "App 'com.hdfcbank.customerapp.update' sideloaded from 'apkpure.com' with READ_SMS, BIND_ACCESSIBILITY_SERVICE permissions.",
+      "statutory_ref": "IT Act \u00a743",
+      "entities_involved": [
+        "APP:com.hdfcbank.customerapp.update"
+      ]
+    },
+    {
+      "rule_id": "R-006",
+      "title": "Foreign Originating IP / Geolocation Mismatch",
+      "triggered": true,
+      "score": 15,
+      "evidence": "Phishing email originating from foreign IP 196.216.2.45 (SPF: fail, DKIM: fail).",
+      "statutory_ref": "IT Act \u00a766",
+      "entities_involved": [
+        "IP_ADDRESS:196.216.2.45"
+      ]
+    },
+    {
+      "rule_id": "R-007",
+      "title": "Rapid Physical ATM Cashout",
+      "triggered": true,
+      "score": 25,
+      "evidence": "Physical ATM Cashout of INR 93,800 executed at Koramangala ATM within 12 seconds of final transfer.",
+      "statutory_ref": "PMLA \u00a78",
+      "entities_involved": [
+        "ACCOUNT:CASH-ATM-KORAMANGALA",
+        "UPI_HANDLE:cashout.agent@oksbi"
+      ]
+    }
+  ]
+}
